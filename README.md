@@ -2,7 +2,7 @@
 GreeterService using Twirp and DynamoDB
 
 Functions:  
-`SetGreetingForUser(name)->None`:   Stores a greeting message in Table `Users` by randomly selecting greeting phrases
+`SetGreetingForUser(name)->None`:   Stores a greeting message in Table `Users` by randomly selecting greeting phrases  
 `GetGreetingForUser(name)->message`:   Fetches the message from the database by 'name'
 
 To execute file:
