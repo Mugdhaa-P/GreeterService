@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package github.com.mugdhaaPatankar.GreeterService.rpc.greeter;
+option go_package = "/greeter";
+
+service Greeter {
+    rpc SetGreetingForUser(Name) returns (Empty);
+    rpc GetGreetingForUser(Name) returns (Greeting);
+}
+
+message Greeting {
+    string message = 1;
+}
+
+message Name {
+    string message = 1;
+}
+
+message Empty {}
